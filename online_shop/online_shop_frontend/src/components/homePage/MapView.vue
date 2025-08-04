@@ -27,6 +27,13 @@ const lng = 139.8034
 // Google Maps URL（新标签页中打开）
 const googleMapsUrl = ref(`https://www.google.com/maps?q=${lat},${lng}`)
 
+// ✅ 添加 Leaflet 默认图标资源路径配置
+L.Icon.Default.mergeOptions({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png'
+})
+
 const initMap = () => {
   const map = L.map('map').setView([lat, lng], 20)
 
@@ -43,6 +50,7 @@ onMounted(() => {
   initMap()
 })
 </script>
+
 
 <style scoped>
 .btn {
