@@ -65,22 +65,22 @@ import CalendarDisplay from '../components/common/CalendarDisplay.vue'
 
 const slides = ref([
   {
-    src: new URL('@/assets/banner1.jpg', import.meta.url).href,
+    src: new URL('../assets/banner1.jpg', import.meta.url).href,
     alt: 'スライド1',
-    title: 'タイトル1',
-    description: 'これは最初のスライドの説明です。'
+    title: 'Comming Soon',
+    description: 'グランドオープンをお楽しみに！'
   },
   {
-    src: new URL('@/assets/banner2.jpg', import.meta.url).href,
+    src: new URL('../assets/banner2.jpg', import.meta.url).href,
     alt: 'スライド2',
-    title: 'タイトル2',
-    description: 'これは2番目のスライドの説明です。'
+    title: '中華物産',
+    description: '豊富な商品を自由にお選びいただけます。'
   },
   {
-    src: new URL('@/assets/banner3.jpg', import.meta.url).href,
+    src: new URL('../assets/banner3.jpg', import.meta.url).href,
     alt: 'スライド3',
-    title: 'タイトル3',
-    description: 'これは最後のスライドの説明です。'
+    title: '中華物産',
+    description: '豊富な商品を自由にお選びいただけます。'
   }
 ])
 

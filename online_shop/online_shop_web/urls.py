@@ -14,9 +14,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path, include
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # ... 你的 API 路由
+    # re_path(r'^.*$', TemplateView.as_view(template_name="index.html")),  # 捕获所有路径
+    path('', include('online_shop_backend.urls')),
 ]
+
+from django.conf import settings
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])

@@ -17,7 +17,7 @@
     <div class="category-section">
       <div class="section-header">▼ {{ $t('category.official_account') }}</div>
       <div class="sns-icons">
-        <img class="wechat-qr" src="@/assets/QRCode.jpg" alt="WeChat" style="height: 100%; width: 100%;"/>
+        <img class="wechat-qr" src="../../assets/QRCode.jpg" alt="WeChat" style="height: 100%; width: 100%;"/>
         <p class="sns-label">WeChat</p>
       </div>
     </div>

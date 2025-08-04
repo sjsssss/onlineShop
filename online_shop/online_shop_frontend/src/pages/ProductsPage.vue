@@ -33,9 +33,9 @@ import ProductSearch from '../components/product/ProductSearch.vue'
 import { ref, computed } from 'vue'
 
 const slides = ref([
-  { src: new URL('@/assets/banner1.jpg', import.meta.url).href, title: 'タイトル1', description: '説明1' },
-  { src: new URL('@/assets/banner2.jpg', import.meta.url).href, title: 'タイトル2', description: '説明2' },
-  { src: new URL('@/assets/banner3.jpg', import.meta.url).href, title: 'タイトル3', description: '説明3' }
+  { src: new URL('../assets/banner1.jpg', import.meta.url).href, title: 'Comming Soon', description: 'グランドオープンをお楽しみに！' },
+  { src: new URL('../assets/banner2.jpg', import.meta.url).href, title: '中華物産', description: '豊富な商品を自由にお選びいただけます。' },
+  { src: new URL('../assets/banner3.jpg', import.meta.url).href, title: '中華物産', description: '豊富な商品を自由にお選びいただけます。' }
 ])
 
 
