@@ -3,7 +3,7 @@
     <SideCategory class="side-category" v-show="!isMobile || showSidebar" />
 
     <div class="main-content">
-      <Carousel :slides="slides" />
+      <!-- <Carousel :slides="slides" /> -->
 
       <!-- 分类按钮 -->
       <div class="faq-buttons">
