@@ -121,28 +121,28 @@ WSGI_APPLICATION = 'online_shop_web.wsgi.application'
 # }
 
 # 開発環境用 homepage
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hp_site',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': 3306,
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'hp_site',
+#         'USER': 'root',
+#         'PASSWORD': '123456',
+#         'HOST': 'localhost',
+#         'PORT': 3306,
+#     }
+# }
 
 # 開発環境用 shopping_site
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shopiing_site',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST': 'localhost',
-        'PORT': 3306,
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'shopiing_site',
+#         'USER': 'root',
+#         'PASSWORD': '123456',
+#         'HOST': 'localhost',
+#         'PORT': 3306,
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -162,10 +162,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# TODO 构筑时替换 允许的跨域来源 
 CORS_ALLOWED_ORIGINS = [
-    "https://sky-tech.cloud",
-    "https://www.sky-tech.cloud",
+    "https://qiaoqiaowu.shop",
+    "https://www.qiaoqiaowu.shop",
 ]
 
 # 允许的方法和头部
@@ -251,6 +250,6 @@ LOGGING = {
 
 
 # TODO 按照实际IP替换
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000','https://sky-tech.cloud', 'https://www.sky-tech.cloud']
+CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000','https://qiaoqiaowu.shop', 'https://www.qiaoqiaowu.shop']
 
 APPEND_SLASH = False
