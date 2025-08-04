@@ -6,7 +6,7 @@ from datetime import timedelta
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-kwd$xwxf8m0to7x^69wg+s00uw#7=dw1r*sj)k@8ra1ofzccc='
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'qiaoqiaowu.shop', 'www.qiaoqiaowu.shop']
 
 # 应用
